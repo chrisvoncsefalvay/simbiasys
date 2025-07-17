@@ -95,3 +95,41 @@ For now we'll set doctor and patient models as environment variables but we'll e
 
 * use browsermcp for browser access
 * use context7 for documentation
+
+## Key Libraries and Tools
+
+### Backend
+- **FastAPI**: Web framework for building the API (port 8096)
+- **uv**: Package manager for Python dependencies
+- **OpenAI Python client**: For LMStudio/Ollama API integration
+- **Jinja2**: Template engine for prompt generation
+- **SQLite/PostgreSQL**: Database for simulation persistence
+- **Redis**: Caching layer for LLM responses
+- **WebSockets**: Real-time communication with frontend
+- **Pydantic**: Data validation and models
+- **python-dotenv**: Environment variable management
+
+### LLM Integration
+- **LMStudio**: Local LLM server (OpenAI-compatible API)
+- **Ollama**: Alternative local LLM server (Python package)
+- **MedGemma**: Model for physician simulation
+- **Gemma**: Model for patient simulation
+
+### Frontend
+- **React/Vue/Svelte**: Modern web framework (TBD)
+- **TypeScript**: Type safety for frontend
+- **shadcn/ui**: UI component library
+- **Chart.js/D3.js**: Data visualisation
+- **WebSocket client**: Real-time updates
+- **Redux/Vuex/Stores**: State management
+
+### Testing & Development
+- **pytest**: Python testing framework
+- **PyCharm**: IDE with run configurations
+- **Git**: Version control
+- **Docker**: Containerisation
+
+### Logging & Monitoring
+- **Python logging**: Initial file-based logging
+- **ELK Stack**: Future log aggregation
+- **Sentry**: Future error tracking
