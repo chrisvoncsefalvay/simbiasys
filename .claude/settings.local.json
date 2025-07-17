@@ -47,5 +47,25 @@
       "Bash(taskkill:*)"
     ],
     "deny": []
+  },
+  "mcpServers": {
+        "browsermcp": {
+          "command": "cmd",
+          "args": [
+            "/c",
+            "npx",
+            "-y",
+            "@browsermcp/mcp@latest"
+          ],
+          "env": {
+            "CHROME_PATH": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+          }
+        },
+      "github.com/upstash/context7-mcp": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@upstash/context7-mcp@latest"],
+      "disabled": false,
+      "autoApprove": []
+    }
   }
 }
