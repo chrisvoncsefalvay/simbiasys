@@ -36,21 +36,6 @@ The project simulates physician-patient interactions around test result interpre
 
 Since this is a new project, commands will be established as features are implemented:
 
-```bash
-# Python virtual environment setup (once established)
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-# Install dependencies (once requirements.txt exists)
-pip install -r backend/requirements.txt
-
-# Run backend server (once implemented)
-uvicorn backend.main:app --reload
-
-# Run tests (once test framework is set up)
-pytest
-```
-
 ## Project Conventions
 
 - **British English**: No em dashes, no Oxford commas
@@ -86,4 +71,27 @@ pytest
 * Ollama - via Python package
 * LMStudio - via API
 * Allow LLM provider to be set by env var, as well as host and port
-* 
+* Serve API on port 8096, web frontend on standard ports.
+
+### Web development
+
+Use the browsermcp MCP server to verify changes to the frontend. 
+
+### Aesthetics
+
+Use for inspiration:
+
+* https://ui.shadcn.com/themes#themes
+
+### Logging
+
+Frontend and backend should log extensively. Initially just log to files but provide for logging to ELK stack or Sentry later.
+
+### Language models
+
+For now we'll set doctor and patient models as environment variables but we'll eventually set them in the frontend.
+
+### MCP servers
+
+* use browsermcp for browser access
+* use context7 for documentation
