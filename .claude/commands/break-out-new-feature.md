@@ -1,0 +1,1 @@
+Look at the feature titled ${ARGUMENT} in ROADMAP.md. Explore what it includes and write a feature document that complies with the template in .vibe/templates/FEATURE_HL.template.md. Save it in .pm/features/ as a markdown file. Affix FEAT_, then the number of the feature, to the file name.
