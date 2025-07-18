@@ -39,8 +39,10 @@ simbiasys/
 ```env
 # LLM Configuration
 LLM_PROVIDER=lmstudio
-LLM_HOST=localhost
-LLM_PORT=1234
+LMSTUDIO_HOST=127.0.0.1
+LMSTUDIO_PORT=1234
+OLLAMA_HOST=localhost
+OLLAMA_PORT=11434
 PHYSICIAN_MODEL=MedGemma
 PATIENT_MODEL=Gemma
 
@@ -48,8 +50,6 @@ PATIENT_MODEL=Gemma
 API_HOST=0.0.0.0
 API_PORT=8096
 
-# Database
-DATABASE_URL=sqlite:///./simbiasys.db
 ```
 
 ## DOCUMENTATION:
